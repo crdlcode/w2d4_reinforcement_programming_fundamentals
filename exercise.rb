@@ -19,3 +19,20 @@ directions_111 = trains[7][:direction]
 frequency_80B = trains[5][:directions]
 
 #3
+directions_610 = trains[2][:direction]
+
+#4
+northbound_trains = []
+trains.each {|train|
+  if train[:direction] == "north"
+    northbound_trains << train[:train]
+  end
+}
+
+#5
+eastbound_trains = []
+trains.each {|train|
+  if train[:direction] == "east"
+    eastbound_trains << train[:train]
+  end
+}
